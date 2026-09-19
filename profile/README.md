@@ -4,7 +4,7 @@ AX.25 networking for Unix — userspace and kernelspace, with connector to the o
 
 ## The suite
 
-- **libax25 / ax25apps /ax25tools** — the classic AX.25 library, applications, and tools
+- **libax25 / ax25apps / ax25tools** — the classic AX.25 library, applications, and tools
 - **wampes** — a `net` derivative (ka9q nos) with a full userspace AX.25 stack
 
 ## What's new
