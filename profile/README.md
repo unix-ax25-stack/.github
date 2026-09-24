@@ -83,6 +83,7 @@ loop    -    -
 direwolf      DL9SAU-2  0  256  7   Direwolf channel 0
 ```
 
+
 Example direwolf configuration:
 ```
 ADEVICE    "yourSoundcard"
@@ -92,6 +93,12 @@ MYCALL     DL9SAU-2
 AGWPORT    8000
 ```
 
+*Important*:
+now start (/usr/local/sbin)ax25netd
+libax25 passes the AGEPE-requests to ax25netd, wo feeds the addressed upstream end (in this example, direwolf).
+
+A note to ax25netd: ax25netd also accept users (i.E. from your LAN) using a AGWPE-capable packet-radio Program and could forward it to direwolf.
+There's also an optional program ax25tcpd with which you can initiate connections via ax25netd. ax25tcpd accept tcp-connections (default on port 8101 and port 8102) for granting packet-radio access via telnet.
 
 ## Upstream
 
