@@ -251,8 +251,8 @@ Additionally, if you like to use or test libax25 via
       git clone https://github.com/unix-ax25-stack/wampes.git
 ```
   or
-```
   - AGWPE-connector: i.e. direwolf:
+```
       git clone https://github.com/wb2osz/direwolf.git
 ```
 
