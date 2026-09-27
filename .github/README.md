@@ -271,10 +271,12 @@ David Ranch KI6ZHD provided a build-script: build-unix-ax25-stack.sh:
   https://github.com/unix-ax25-stack/.github/blob/main/build-unix-ax25-stack.sh
 ```
 
+Then compile and install:
 ```
 for i in libax25.git ax25-apps.git ax25-tools.git; do
   cd $i ; autoreconf --install --force ; ./configure --enable-userspace-ax25 --prefix=/usr --sysconfdir=/etc --localstatedir=/var --mandir=/usr/share/man; make clean; make install
-  # For first-time-install of the configuration files: make installconf
+  # For first-time-install of the configuration files:
+  # make installconf
   cd ..
 done
 ```
