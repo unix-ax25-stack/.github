@@ -15,6 +15,7 @@ to WAMPES' userspace *net* stack — bringing AX.25 to other Unices for the
 first time (tested on macOS). Kernel-mode AX.25 remains fully supported.
 
 This project has now a home at https://github.com/unix-ax25-stack
+
 See Annoucement in https://github.com/orgs/unix-ax25-stack/discussions/1
 
 ## Status
@@ -239,15 +240,21 @@ welcome.
 
 Quick example how to compile and install libax25 ax25-apps ax25-tools and wampes
 First, get the packages with git clone:
+```
   git clone https://github.com/unix-ax25-stack/libax25.git
   git clone https://github.com/unix-ax25-stack/ax25-apps.git
   git clone https://github.com/unix-ax25-stack/ax25-tools.git
+```
 Additionally, if you like to use or test libax25 via
   - wampes connector:
+```
       git clone https://github.com/unix-ax25-stack/wampes.git
+```
   or
+```
   - AGWPE-connector: i.e. direwolf:
       git clone https://github.com/wb2osz/direwolf.git
+```
 
 Check if installed:  make autoconf automake (>1.9) zlib1g-dev libtool and libncursesw6-dev (previously libncurses-dev) and optionaly libfltk1.3-dev (for ax25-tools/hdlcutil). Parts of the ax25-tools package will also need fltk and fltk development packages (and are silently skipped on compile if these packages are not installed).
 WAMPES also needs libgdbm-dev.
@@ -260,8 +267,9 @@ Alpine                            apk add gdbm-dev ...
 ```
 
 David Ranch KI6ZHD provided a build-script: build-unix-ax25-stack.sh:
+```
   https://github.com/unix-ax25-stack/.github/blob/main/build-unix-ax25-stack.sh
-
+```
 
 ```
 for i in libax25.git ax25-apps.git ax25-tools.git; do
